@@ -1,0 +1,127 @@
+```bash
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.4 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+7.0.0-34-generic
+架构：                       x86_64
+  CPU 运行模式：             32-bit, 64-bit
+  Address sizes:             42 bits physical, 48 bits virtual
+  字节序：                   Little Endian
+CPU:                         18
+  在线 CPU 列表：            0-17
+厂商 ID：                    GenuineIntel
+  型号名称：                 Intel(R) Core(TM) Ultra 7 251HX
+    CPU 系列：               6
+    型号：                   198
+    每个核的线程数：         1
+    每个座的核数：           18
+    座：                     1
+    步进：                   2
+    CPU(s) scaling MHz:      36%
+    CPU 最大 MHz：           5100.0000
+    CPU 最小 MHz：           800.0000
+    BogoMIPS：               6528.00
+    标记：                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pg
+                             e mca cmov pat pse36 clflush dts acpi mmx fxsr sse 
+                             sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm cons
+                             tant_tsc art arch_perfmon pebs bts rep_good nopl xt
+                             opology nonstop_tsc cpuid aperfmperf tsc_known_freq
+                              pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm
+                             2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 
+                             x2apic movbe popcnt tsc_deadline_timer aes xsave av
+                             x f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault
+                              ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flex
+                             priority ept vpid ept_ad fsgsbase tsc_adjust bmi1 a
+                             vx2 smep bmi2 erms invpcid rdt_a rdseed adx smap cl
+                             flushopt clwb intel_pt sha_ni xsaveopt xsavec xgetb
+                             v1 xsaves split_lock_detect user_shstk avx_vnni lam
+                              wbnoinvd dtherm ida arat pln pts hwp hwp_notify hw
+                             p_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku 
+                             ospke waitpkg gfni vaes vpclmulqdq rdpid bus_lock_d
+                             etect movdiri movdir64b fsrm md_clear serialize arc
+                             h_lbr ibt flush_l1d arch_capabilities
+Virtualization features:     
+  虚拟化：                   VT-x
+Caches (sum of all):         
+  L1d:                       672 KiB (18 instances)
+  L1i:                       1.1 MiB (18 instances)
+  L2:                        30 MiB (9 instances)
+  L3:                        30 MiB (1 instance)
+NUMA:                        
+  NUMA 节点：                1
+  NUMA 节点0 CPU：           0-17
+Vulnerabilities:             
+  Gather data sampling:      Not affected
+  Ghostwrite:                Not affected
+  Indirect target selection: Not affected
+  Itlb multihit:             Not affected
+  L1tf:                      Not affected
+  Mds:                       Not affected
+  Meltdown:                  Not affected
+  Mmio stale data:           Not affected
+  Old microcode:             Not affected
+  Reg file data sampling:    Not affected
+  Retbleed:                  Not affected
+  Spec rstack overflow:      Not affected
+  Spec store bypass:         Mitigation; Speculative Store Bypass disabled via p
+                             rctl
+  Spectre v1:                Mitigation; usercopy/swapgs barriers and __user poi
+                             nter sanitization
+  Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditi
+                             onal; PBRSB-eIBRS Not affected; BHI BHI_DIS_S
+  Srbds:                     Not affected
+  Tsa:                       Not affected
+  Tsx async abort:           Not affected
+  Vmscape:                   Mitigation; IBPB before exit to userspace
+00:02.0 VGA compatible controller: Intel Corporation Arrow Lake-U [Intel Graphics] (rev 06)
+02:00.0 VGA compatible controller: NVIDIA Corporation Device 2d59 (rev a1)
+80:14.5 Non-VGA unclassified device: Intel Corporation Device 7f2f (rev 10)
+00:02.0 VGA compatible controller: Intel Corporation Arrow Lake-U [Intel Graphics] (rev 06)
+	Subsystem: Lenovo Device 8015
+	Kernel driver in use: i915
+	Kernel modules: i915, xe
+--
+02:00.0 VGA compatible controller: NVIDIA Corporation Device 2d59 (rev a1)
+	Subsystem: Lenovo Device 8015
+	Kernel driver in use: nvidia
+	Kernel modules: nvidiafb, nouveau, nvidia_drm, nvidia
+--
+80:14.5 Non-VGA unclassified device: Intel Corporation Device 7f2f (rev 10)
+	Subsystem: Lenovo Device 3d73
+80:15.0 Serial bus controller: Intel Corporation Device 7f4c (rev 10)
+	Subsystem: Lenovo Device 3d73
+x11
+
+:1
+Sun Sep 27 20:33:03 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.84                 Driver Version: 595.84         CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 5060 ...    Off |   00000000:02:00.0 Off |                  N/A |
+| N/A   39C    P4             10W /   50W |      15MiB /   8151MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
++-----------------------------------------------------------------------------------------+
+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            2500      G   /usr/lib/xorg/Xorg                        4MiB |
++-----------------------------------------------------------------------------------------+
+```
+
