@@ -544,3 +544,100 @@ Panels: original | Otsu binary | Canny edges
 g++ 是编译器，真正干活翻译C++代码；CMake根本不编译代码，它是一个生成编译脚本的工具。
 
 This modification was written inside dev-develop branch
+
+
+
+
+
+##7.Git and Github
+
+命令：
+```bash
+备注：emm尴尬，在某一步进入vim编辑器后卡死了，只能用history检索了
+  263  git init
+  264  git branch -M main
+  265  git add README.md
+  266  git add .gitignore
+  267  git commit -m 'system information'
+  268  git add assets/
+  269  git rm --cached assets
+  270  -f
+  271  git rm --cached -f assets
+  272  cd assets
+  273  rm -rf .git
+  274  cd ..
+  275  git add assets/ python_a/ python_b/
+  276  git commit -m 'py part'
+  277  git add cpp/
+  278  git commit -m 'c++/cmake part'
+  279  git reset --hard HEAD~1
+  280  git switch -c feature-dev
+  281  git add cpp
+  282  git commit -m 'c++/cmake part'
+  283  git add cpp/
+  284  git status
+  285  git switch -c main
+  286  git status
+  287  git switch main
+  288  git status
+  289  git reflog
+  290  git reset --hard d2417c8
+  291  git status
+  292  git is-files
+  293  git ls-files
+  294  git rm --catched -r cpp
+  295  git rm --cached -r cpp
+  296  git switch feature-dev
+  297  git status
+  298  git restore --staged <文件>...
+  299  git restore --staged cpp/
+  300  git status
+  301  git switch feature-dev
+  302  git checkout d2417c8 -- cpp/
+  303  git status
+  304  git commit -m 'c++/cmake part'
+  305  git switch main
+  306  git merge feature-dev
+(base) shr@shr-Legion-Y7000P-IAX10:~/桌面/RCassignment/ROBOCON-Vision-Assignment
+-1$ git commit -m'merge into main branch'
+[main aa25513] merge into main branch
+(base) shr@shr-Legion-Y7000P-IAX10:~/桌面/RCassignment/ROBOCON-Vision-Assignment
+-1$ git status
+位于分支 main
+无文件要提交，干净的工作区
+(base) shr@shr-Legion-Y7000P-IAX10:~/桌面/RCassignment/ROBOCON-Vision-Assignment
+-1$ git log --oneline --graph
+*   aa25513 (HEAD -> main) merge into main branch
+|\  
+| * 2271c7e (feature-dev) c++/cmake part
+* | d2417c8 c++/cmake part
+|/  
+* ab8cf22 py part
+* 829524f system information
+(base) shr@shr-Legion-Y7000P-IAX10:~/桌面/RCassignment/ROBOCON-Vision-Assignment
+-1$ git remote add origin https://github.com/shannon-103/shannon-103-ROBOCON-Vision-Assignment-1-
+(base) shr@shr-Legion-Y7000P-IAX10:~/桌面/RCassignment/ROBOCON-Vision-Assignment
+-1$  git push origin main
+git push origin feature-dev
+Username for 'https://github.com': shannon-103
+Password for 'https://shannon-103@github.com': 
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: 'https://github.com/shannon-103/shannon-103-ROBOCON-Vision-Assignment-1-/' 鉴权失败
+Username for 'https://github.com': shannon-103
+Password for 'https://shannon-103@github.com': 
+枚举对象中: 28, 完成.
+对象计数中: 100% (28/28), 完成.
+使用 18 个线程进行压缩
+压缩对象中: 100% (26/26), 完成.
+error: RPC 失败。HTTP 408 curl 22 The requested URL returned error: 408
+send-pack: unexpected disconnect while reading sideband packet
+写入对象中: 100% (28/28), 8.58 MiB | 639.00 KiB/s, 完成.
+总共 28（差异 2），复用 0（差异 0），包复用 0
+fatal: 远端意外挂断了
+Everything up-to-date
+(base) shr@shr-Legion-Y7000P-IAX10:~/桌面/RCassignment/ROBOCON-Vision-Assignment
+-1$ 
+
+
+```
+
