@@ -638,6 +638,19 @@ Everything up-to-date
 (base) shr@shr-Legion-Y7000P-IAX10:~/桌面/RCassignment/ROBOCON-Vision-Assignment
 -1$ 
 
+308  git status
+  309  git init
+  310  git rm --cached -r assets
+  311  git ls-files
+  312  git init
+  313  git status
+  314  git rm --cached -r assets
+  315  git status
+  316  git commit -m "remove assets folder from git tracking, assets will not upload"
+  317  git push -u origin main
+  318  git add README.md assets/
+  319  git commit -m 'change'
+  320  git push
 
 ```
 
